@@ -1,0 +1,99 @@
+/* set selector body warna dan font */
+body {
+    background-color:  #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* set selector header, main, footer */
+header, main, footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* set class nav */
+.nav {
+    background-color: #9ECAD6;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 0px 0px 13px 13px;
+    margin-bottom: 10px;
+}
+/* set h1 dari parent nav */
+.nav h1 {
+    font-size: 42px;
+    color: #000000;
+}
+/* set class container */
+.container {
+    align-content: center;
+    text-align: center;
+}
+/* set img dari parent cotainer */
+.container img {
+    box-shadow: 12px 12px #797575;
+    width: 250px;
+    height: 300px;
+}
+
+
+/* set class second-content */
+.second-content{
+    margin-top: 20px;
+    display: grid;
+    /* 2 kolom */
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 10px;
+}
+/* set class box */
+.box {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 25px;
+}
+/* set selector img dari selector a*/
+a img {
+    border-radius: 50px;
+    box-shadow: 5px 3px #797575;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+/* set selector main */
+main {
+    margin-top: 20px;
+}
+/* set selector footer */
+footer {
+    margin-top: 50px;
+}
+
+/*set ukuran layar < 768px */
+@media (max-width: 768px) {
+    /* set menjadi 1 kolom */
+    .second-content {
+        grid-template-columns: 1fr; 
+    }
+    /* set lebar dan tinggi */
+    .container img {
+        width: 50%; 
+        height: auto; 
+    }
+    /* set padding */
+    header, main, footer {
+        padding: 0 15px; 
+    }
+    /* set padding */
+    .nav {
+        padding: 15px;
+    }
+    /* set padding */
+    .nav h1 {
+        font-size: 1.5rem;
+    }
+     /* set padding */
+    .box {
+        padding: 15px;
+    }
+}
